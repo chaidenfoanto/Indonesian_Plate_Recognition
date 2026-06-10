@@ -19,9 +19,9 @@ This project explores three pipeline architectures:
 ## Pipelines Compared
 
 ### Pipeline 1: YOLOv8 + EasyOCR
-
+<div align="center">
 <img src="assets/pipelineYOLOv8+EasyOCR.jpeg" alt="YOLOv8 + EasyOCR Pipeline" height="400">
-
+</div>
 | Stage | Detail |
 |---|---|
 | Plate detection | YOLOv8 pretrained (`wuriyanto/yolo8-indonesian-license-plate-detection`) |
@@ -35,13 +35,13 @@ This project explores three pipeline architectures:
 ### Pipeline 2: YOLO26-Only (Documented Failure)
 
 This pipeline attempted to replace YOLOv8 with the custom YOLO26 model directly. Because YOLO26 was trained to detect 36 individual characters (not a plate as a whole object), it produced 12 chaotic bounding boxes on an image containing only 4 vehicles, with 0 out of 12 crops returning readable output.
-
+<div align="center">
 <img src="assets/result-yolo26only.png" alt="Result of YOLO26 Only" height="400">
-
+</div>
 ### Pipeline 3: Hybrid YOLOv8 + YOLO26
-
+<div align="center">
 <img src="assets/hybrid-pipeline.jpeg" alt="Hybrid Pipeline" height="400">
-
+</div>
 | Stage | Detail |
 |---|---|
 | Plate detection | YOLOv8 pretrained (`wuriyanto/yolo8-indonesian-license-plate-detection`) |
@@ -70,9 +70,9 @@ This pipeline attempted to replace YOLOv8 with the custom YOLO26 model directly.
 - **Total validation instances:** 1,321 character annotations across 179 images
 - **Class with most instances:** `1` (170 instances in validation)
 - **Class with fewest instances:** `Q` (10 instances in validation)
-
+<div align="center">
 <img src="assets/dataset-structure.jpeg" alt="Directory Structure" height="400">
-
+</div>
 ---
 
 ## Model Training
