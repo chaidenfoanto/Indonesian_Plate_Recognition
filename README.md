@@ -20,7 +20,7 @@ This project explores three pipeline architectures:
 
 ### Pipeline 1: YOLOv8 + EasyOCR
 
-![YOLOv8 + EasyOCR Pipeline](assets/pipelineYOLOv8+EasyOCR.jpeg)
+<img src="assets/pipelineYOLOv8+EasyOCR.jpeg" alt="YOLOv8 + EasyOCR Pipeline" height="400">
 
 | Stage | Detail |
 |---|---|
@@ -36,11 +36,11 @@ This project explores three pipeline architectures:
 
 This pipeline attempted to replace YOLOv8 with the custom YOLO26 model directly. Because YOLO26 was trained to detect 36 individual characters (not a plate as a whole object), it produced 12 chaotic bounding boxes on an image containing only 4 vehicles, with 0 out of 12 crops returning readable output.
 
-![Result of YOLO26 Only](assets/result-yolo26only.jpeg)
+<img src="assets/result-yolo26only.png" alt="Result of YOLO26 Only" height="400">
 
 ### Pipeline 3: Hybrid YOLOv8 + YOLO26
 
-![Hybrid Pipeline](assets/hybrid-pipeline.jpeg)
+<img src="assets/hybrid-pipeline.jpeg" alt="Hybrid Pipeline" height="400">
 
 | Stage | Detail |
 |---|---|
@@ -55,7 +55,7 @@ This pipeline attempted to replace YOLOv8 with the custom YOLO26 model directly.
 
 ## Dataset
 
-**Source:** [Indonesian License Plate Recognition Dataset](https://www.kaggle.com/datasets/juanthomaswijaya/indonesian-license-plate-dataset) (Kaggle)
+**Source:** [Indonesian License Plate Recognition Dataset](https://www.kaggle.com/datasets/juanthomaswijaya/indonesian-license-plate-dataset) (Kaggle)  
 **Additional access:** [Google Drive](https://drive.google.com/drive/folders/1dSfeRFhcaQ0Z2WG26rw8aajEqnWRLtVu?usp=sharing)
 
 | Split | Images | Labels |
@@ -71,7 +71,7 @@ This pipeline attempted to replace YOLOv8 with the custom YOLO26 model directly.
 - **Class with most instances:** `1` (170 instances in validation)
 - **Class with fewest instances:** `Q` (10 instances in validation)
 
-![Directory Structure](assets/dataset-structure.jpeg)
+<img src="assets/dataset-structure.jpeg" alt="Directory Structure" height="400">
 
 ---
 
